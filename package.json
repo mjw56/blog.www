@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "handlebars": "^4.0.10",
+    "showdown": "^1.7.1"
+  },
+  "scripts": {
+    "build": "node index.js"
+  }
+}

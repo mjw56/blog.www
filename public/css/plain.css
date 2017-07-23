@@ -1,0 +1,199 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(255, 254, 250);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  height: 100%;
+}
+
+::selection {
+    color: white; 
+    background: hotpink;
+}
+
+/* Start Landing Page */
+.landing header {
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing header h1 {
+  font-size: 44px;
+  background-color: #384048;
+  padding: 14px;
+  border-radius: 5px;
+  color: white;
+  font-family: monospace;
+}
+
+.landing main {
+  height: 65%;
+}
+
+.landing main > section {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px;
+  font-size: 24px;
+}
+
+.landing ul {
+  margin: 0;
+  padding: 0;
+}
+
+.landing li {
+  list-style: none;
+}
+
+.landing li:hover {
+  cursor: pointer;
+  opacity: 0.25;
+}
+/* End Landing Page */
+
+/* Start Post Page */
+.post header {
+  height: 5%;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.post header a {
+  text-decoration: none;
+  color: #333;
+}
+
+.post a:hover {
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.post main {
+  height: 95%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.post main > article {
+  padding: 30px;
+}
+
+.post main > article h1 {
+  margin: 0;
+}
+
+.post main > article img {
+  width: 100%; 
+}
+
+.post main > article a {
+  color: #333;
+}
+
+.post main > article .post-body {
+  font-family: 'Cormorant Garamond', serif;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.post main > article .post-body a {
+  text-decoration: none;
+  color: hotpink;
+  border-bottom: 0.1px solid hotpink;
+}
+
+.post main > article .post-body pre {
+  font-size: 10px;
+}
+
+.post main > article .post-body p code {
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    padding: 2px 5px 2px 5px;
+    border-radius: 3px;
+}
+
+.post main > article .post-header {
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.post main > article .post-header h1 {
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+}
+
+.post main > article .post-header h1,
+.post main > article .post-header h6 {
+  margin: 0;
+}
+
+.post main > article .post-header .date {
+  text-align: center;
+  font-size: 14px;
+  margin: 5px 0;
+  color: grey;
+}
+
+.post main > article .post-header .author {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.post main > article .post-header .author span {
+  font-style: initial;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-left: 3px;
+}
+
+.post main > article .post-comments {
+  text-align: left;
+}
+
+.post main > article .post-comments img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.post main > article .post-comments .gh-comment {
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.post main > article .post-comments .gh-comment .header {
+  display: flex;
+  align-items: center;
+}
+
+.post main > article .post-comments .gh-comment .header .meta {
+  margin-left: 15px;
+  font-size: 14px;
+  display: grid;
+}
+
+.post main > article .post-comments .gh-comment .header .meta a {
+  line-height: 2;
+}
+/* End Post Page */
