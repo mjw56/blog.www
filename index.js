@@ -5,9 +5,11 @@ const config = require('./config.json');
 const indexHTML = utility.handlebarsToHTML('./_templates/_index.html', config);
 
 // create index
-utility.writeFile('public/index.html', indexHTML).then(function(res) {
-  console.log(res);
-});
+utility.writeFile('public/index.html', indexHTML)
+  .then(function(res) {
+    console.log(res);
+  })
+  .catch(console.error);
 
 // create posts
 config.posts.forEach(function({ date, slug, title }) {
@@ -18,8 +20,10 @@ config.posts.forEach(function({ date, slug, title }) {
     title: title
   });
 
-  utility.writeFile(`public/${slug}.html`, postHTML).then(function(res) {
-    console.log(res);
-  });
+  utility.writeFile(`public/${slug}.html`, postHTML)
+    .then(function(res) {
+      console.log(res);
+    })
+    .catch(console.error);
 });
 
