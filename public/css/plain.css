@@ -20,22 +20,6 @@ body {
 }
 
 /* Start Landing Page */
-.landing header {
-    height: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.landing header h1 {
-  font-size: 44px;
-  background-color: #384048;
-  padding: 14px;
-  border-radius: 5px;
-  color: white;
-  font-family: monospace;
-}
-
 .landing main {
   height: 65%;
 }
